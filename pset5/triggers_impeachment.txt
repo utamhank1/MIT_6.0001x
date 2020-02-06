@@ -1,0 +1,27 @@
+// trigger file - if you've done problem 9 but no stories are popping up, you
+// should edit this file to contain triggers that will fire on current news
+// stories!
+
+// title trigger named t1
+t1,TITLE,trump 
+
+// description trigger named t2
+t2,DESCRIPTION,ukraine
+
+// description trigger named t3
+t3,DESCRIPTION,impeachment
+
+// after trigger named t4
+t4,AFTER,4 Dec 2019 08:00:00
+
+// composite trigger named t4
+t5,AND,t2,t3
+
+// composite trigger named t4
+t6,AND,t1,t3
+
+// before trigger named t7
+t7, BEFORE,4 Dec 2019 15:00:10
+
+// the trigger list contains t1 and t4
+ADD,t5,t6
